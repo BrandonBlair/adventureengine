@@ -1,0 +1,29 @@
+!!python/object:resources.game_map.GameMap
+tiles:
+  A01: !!python/object:resources.location.Location
+    attributes: []
+    desc: A compact hotel room with a single full-size bed, still made. The window on the back wall is currently covered by beige curtains. A small desk doubles as a stand for the unimpressive TV facing the bed.
+    exits:
+    - !!python/object:resources.exit.Exit
+      known: false
+      item: !!python/object:resources.items.Door
+        contains:
+          inside: []
+          'on': []
+          over: []
+          through: []
+          under: []
+        desc: A solid brown door
+        locked: false
+        gettable: false
+        name: door
+        short_desc: door
+      tile: B01
+    name: Room 301
+    short_desc: small hotel room
+  B01: !!python/object:resources.location.Location
+    attributes: []
+    desc: location
+    exits: []
+    name: My Favorite Room
+    short_desc: location
