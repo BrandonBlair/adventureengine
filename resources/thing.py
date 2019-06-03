@@ -4,6 +4,7 @@ from .container import Container
 class Thing(Container):
     
     def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.name = kwargs.get('name', 'Generic Thing')
         self.short_desc = kwargs.get('short_desc', 'thing')
         self.desc = kwargs.get('desc', 'generic thing')

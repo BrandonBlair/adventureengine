@@ -3,10 +3,10 @@ class GameMap(object):
     def __init__(self, *args, **kwargs):
         self.tiles = kwargs.get('tiles', {})
 
-    def describe_location(self, loc):
+    def loc_desc(self, loc):
         desc = ""
         desc += loc.desc
-        desc += "\n"
+        desc += "\n\n"
         desc += "Exits:\n"
         for ex in loc.exits:
             desc += ex.item.short_desc

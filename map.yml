@@ -6,24 +6,39 @@ tiles:
     exits:
     - !!python/object:resources.exit.Exit
       known: false
-      item: !!python/object:resources.items.Door
+      item: !!python/object:resources.items.Window
         contains:
           inside: []
           'on': []
           over: []
           through: []
           under: []
-        desc: A solid brown door
+        desc: A large double-paned window hidden by thick, beige curtains.
         locked: false
         gettable: false
-        name: door
-        short_desc: door
+        name: window
+        short_desc: large window
       tile: B01
     name: Room 301
     short_desc: small hotel room
   B01: !!python/object:resources.location.Location
     attributes: []
-    desc: location
-    exits: []
-    name: My Favorite Room
-    short_desc: location
+    desc: A ledge skirts the outside of the hotel. The orange glow of lamps can be seen in the dense fog, and the air is bitingly cold.
+    exits:
+    - !!python/object:resources.exit.Exit
+      known: false
+      item: !!python/object:resources.items.Window
+        contains:
+          inside: []
+          'on': []
+          over: []
+          through: []
+          under: []
+        desc: A large double-paned window. Beige curtains can be seen on its interior.
+        locked: false
+        gettable: false
+        name: window
+        short_desc: large window
+      tile: A01
+    name: Outside Ledge
+    short_desc: ledge overlooking the city below
